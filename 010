@@ -1,0 +1,4 @@
+n = int(input('Digite uma quantia: '))
+d = n*0.18
+# 1 real = 0,18 dólares(13 out 2020)
+print('Com {} reais é possível comprar {} dólares' .format(n, d))
