@@ -1,0 +1,6 @@
+n = int(input('Digite o seu salário: '))
+p100 = n*15/100
+#porcentagem
+rcd = n+p100
+# resultado com desconto
+print('Com 15% de desconto o valor se torna {}' .format(rcd))
