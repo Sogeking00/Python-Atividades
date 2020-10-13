@@ -1,0 +1,9 @@
+c = int(input('Digite um número: '))
+a = int(input('Digite outro número: '))
+# estes números são o comprimento e a altura de uma parede
+ae = c*a
+# ÁREA
+l = ae/2
+# quantidade de tinta que será usada para pintar a parede, considerando que 1 litro é capaz de pintar 2m²
+print('A área da parede é de {} e para pintar ela inteira será necessário {} litros de tinta.' .format(ae, l))
+# resultado, Explicação: Comprimento . Altura = Área. Área/2 = Litros de tinta
