@@ -1,0 +1,4 @@
+from math import hypot
+num1 = int(input('Digite o valor de um dos catetos: '))
+num2 = int(input('Digite o valor do outro cateto: '))
+print('O valor da hipotenusa equivale à  {}' .format(hypot(num1, num2num1, num2))) 
