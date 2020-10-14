@@ -1,0 +1,4 @@
+from math import modf
+num = float(input('Digite um número: '))
+inteiro = modf(num)
+print('O número inteiro é {}'.format(inteiro))
