@@ -1,0 +1,6 @@
+km = int(input('Quantos km o seu carro já percorreu? '))
+d = int(input('Faz quantos dias que você alugou este carro?  você alugou esse carro? '))
+q1 = km*0.15
+q2 = d*60
+t = q1+q2
+print('O seu carro percorreu {} km e foi alugado a {} dias, O preço total somando o aluguel do carro e a quantidade de km rodados é de {}'.format(km, d, t))
