@@ -1,0 +1,8 @@
+from math import hypot
+catetop = int(input('Digite a medida do cateto oposto: '))
+catetoad = int(input('Digite a medida do cateto adjacente: '))
+h = hypot(catetop, catetoad)
+seno = catetop/h
+cassen = catetoad/h
+tan = catetop/catetoad
+print('{:.4f} {:.4f} {:.4f}'.format(seno, cassen, tan))
