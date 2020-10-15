@@ -1,0 +1,7 @@
+from random import choice
+
+alunos = ['Pedro', 'Ana', 'João', 'Junior']
+sorteado = choice(alunos)
+
+print(f'O aluno sorteado foi: {sorteado}')
+ 
