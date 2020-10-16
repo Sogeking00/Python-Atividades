@@ -1,5 +1,5 @@
 from math import radians, sin, cos, tan 
-ângulo = float(input('Digte o angulo que vacê deseia: '))
+ângulo = float(input('Digite o angulo que você deseia: '))
 seno = sin(radians (ângulo)) 
 print('0 angulo de {} tem o SENO de {:.2f}'.format (ângulo, seno))
 cosseno = cos (radians (ângulo)) 
