@@ -1,0 +1,5 @@
+num = f'{(int(input("Digite um número de 0 até 9999: "))):04d}'
+print(f'Unidades = {num[3]}')
+print(f'Dezenas = {num[2]}')
+print(f'Centenas = {num[1]}')
+print(f'Milhares = {num[0]}')
