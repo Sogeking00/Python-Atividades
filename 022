@@ -1,0 +1,7 @@
+nome = str(input('Digite seu nome completo: '))
+spl = nome.split()
+let = len(nome) - nome.count(' ')
+print(f'Seu nome completo em letras maiúsculas é {nome.upper()}')
+print(f'Seu nome completo em minúsculas é {nome.lower()}')
+print(f'Seu nome tem {let} letras')
+print(f'Seu primeiro nome tem {len(spl[0])} letras')
