@@ -1,0 +1,8 @@
+from random import randint
+num = randint(0,5)
+num2 = int(input("Adivinhe o número (0 até 5): "))
+if num2 == num:
+  print(f'Parabéns você acertou o número, {num}')
+  
+else:
+  print(f'Tente outra vez!!!')
