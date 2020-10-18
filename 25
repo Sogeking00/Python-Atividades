@@ -1,0 +1,3 @@
+nome = str(input('Digite seu nome completo: ')).strip()
+sil = 'silva' in nome.lower()
+print(f'O seu nome tem Silva? {sil}')
