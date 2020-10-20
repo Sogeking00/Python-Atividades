@@ -1,0 +1,6 @@
+vel = int(input('Seu carro está a quantos Km/h?: '))
+mul = (vel-80)*7
+if vel > 80:
+  print(f'Você ultrapassou o limite de velocidade e foi multado! A multa custa {mul} reais! ')
+else:
+  print('Tenha um bom dia! Dirija com cuidado!') 
