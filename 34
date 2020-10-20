@@ -1,0 +1,9 @@
+sa = float(input('Digite seu salário: '))
+d1 = (sa*10)/100
+d2 = (sa*15)/100
+sd = d1 + sa
+sd2 = d2 + sa
+if sa > 1250:
+   print(f'O salário com aumento é {sd}')
+else:
+   print(f'O salário com aumento é {sd2}')
