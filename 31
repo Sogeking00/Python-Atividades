@@ -1,0 +1,7 @@
+v = int(input('Digite a distância da sua viagem: '))
+p1 = v * 0.50
+p2 = v * 0.45
+if v <= 200:
+  print(f'A viagem custará {p1} reais')
+else:
+  print(f'A viagem custará {p2} reais')
