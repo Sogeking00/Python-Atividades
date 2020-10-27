@@ -1,0 +1,12 @@
+ano = int(input('Em qual ano você nasceu?: '))
+tempr = (2020 - ano) - 18  
+if 2020 - ano < 18:
+    print('Você ainda vai se alistar!')
+elif 2020 - ano == 18:
+    print('Está na hora de se alistar!')
+elif 2020 - ano > 18:
+    print('Já passou o tempo de se alistar!')
+elif 2020 - ano < 18:
+    print(f'Faltam {tempr} anos para você se alistar!')
+elif 2020 - ano > 18:
+    print(f'Ja se passaram {tempr} anos a mais do prazo')
