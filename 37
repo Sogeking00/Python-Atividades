@@ -1,0 +1,19 @@
+```num = int(input('Digite um número: '))
+con = int(input('Digite qual será a base de conversão?(1- Binário, 2-Octal e 3-Hexadecimal): '))
+binário = bin(num)
+octal = oct(num)
+hex = hex(num)
+print('       ')
+print('Processando...')
+print('       ')
+print('       ')
+if con == 1:
+    print(f'Número convertido para binário: {binário}')
+elif con == 2:
+    print(f'Número convertido para octal: {octal}')
+elif con == 3:
+    print(f'Número convertido para hexadecimal: {hex}') 
+print('       ')
+print('Número convertido com sucesso!!')
+print('       ')
+print('       ')```
