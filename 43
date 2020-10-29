@@ -1,0 +1,15 @@
+alt = float(input('Qual a sua altura?: '))
+pes = float(input('Quanto você pesa?: '))
+imc = pes / (alt**2)
+print(f'Você pesa {pes} e tem {alt} metros de altura')
+print(f'Seu IMC é {imc:.1f}')
+if imc < 18.5:
+    print('Seu imc é menor que 18.5, Você esta abaixo do peso!')
+elif imc >= 18.5 and imc <= 25:
+    print('Seu imc está entre 18.5 e 25, Você está no peso ideal!')
+elif imc >= 25 and imc <= 30:
+    print('Seu imc está entre 25 e 30, Você está acima do peso ideal, sobrepeso!')
+elif imc >= 30 and imc <= 40:
+    print('Seu imc está entre 30 e 40, Você é obeso')
+else:
+    print('Seu imc é maior que 40, você tem obesidade mórbida!')
