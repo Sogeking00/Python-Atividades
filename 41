@@ -1,0 +1,14 @@
+from datetime import date
+ano = date.today().year
+nasc = int(input('Em que ano você nasceu?: '))
+ida = ano - nasc
+if ida <= 9:
+    print(f'Você tem {ida} anos, Sua categoria é MIRIM')
+elif ida <= 14:
+    print(f'Você tem {ida} anos, Sua categoria é INFANTIL')
+elif ida <= 19:
+    print(f'Você tem {ida} anos, Sua categoria é JUNIOR')
+elif ida <= 20:
+    print(f'Você tem {ida} anos, Sua categoria é SÊNIOR')
+else: 
+    print(f'Você tem {ida} anos, Sua categoria é MASTER')
