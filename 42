@@ -1,0 +1,13 @@
+sg1 = float(input('Digite o primeiro segmento: ')) 
+sg2 = float(input('Digite o segundo segmento: ')) 
+sg3 = float(input('Digite o terceiro segmento: ')) 
+if sg1 < sg2 + sg3 and sg2 < sg1 + sg3 and sg3 < sg1 + sg2:
+    print('Os Segmentos podem formar um triângulo!')
+    if sg1 == sg2 and sg1 == sg3 and sg3 == sg2:
+        print('O triângulo formado é Equilátero!')
+    elif sg1 == sg2 or sg1 == sg3 or sg2 == sg3:
+        print('O triângulo formado é Isósceles!')
+    elif sg1 != sg2 and sg1 != sg3 and sg2 != sg3:
+        print('O triângulo formado é Escaleno!')
+else:
+    print('Os Segmentos não podem formar um triângulo')
