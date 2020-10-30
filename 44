@@ -1,0 +1,15 @@
+pr = float(input('Qual o preço das compras?: '))
+pag = int(input('[1] A vista no dinheiro/cheque\n[2] A vista no cartão\n[3] 2x no cartão\n[4] 3x ou mais no cartão\n Qual a forma de pagamento?: '))
+desc1 = pr - (pr*10/100)
+desc2 = pr - (pr*5/100)
+jr = pr - (pr*20/100)
+if pag == 3 or pag == 4:
+    par = int(input('Quantas parcelas?: '))
+    if pag == 3:
+        print(f'Você não tem desconto, o valor da compra é {pr}')
+    elif pag == 4:
+        print(f'Você tem 20% de juros, o valor da compra é {jr}')
+elif pag == 1:
+    print(f'Você tem 10% de desconto, o valor da compra é {desc1}')
+elif pag == 2:
+    print(f'Você tem 5% de desconto, o valor da compra é{desc2}')
