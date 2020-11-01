@@ -1,0 +1,35 @@
+from random import choice
+from time import sleep
+print('=-='*15)
+sleep(0.5)
+print('Bem vindo ao Jogo! Vamos jogar Pedra, Papel e Tesoura!')
+sleep(0.5)
+print('=-='*15)
+wld_msgs = ('Empate!', 'Você perdeu!', 'Você ganhou!')
+rps_opts = ('pedra', 'papel', 'tesoura')
+sleep(0.5)
+pl_choice = int(input('''
+[1] - Pedra
+[2] - Papel
+[3] - Tesoura
+Sua opção: '''))
+sleep(0.5)
+pl_choice = rps_opts[pl_choice-1]
+pc_choice = choice(rps_opts)
+print('=-='*15)
+if pl_choice == pc_choice:
+    print(f'\n\
+{wld_msgs[0]}')
+elif pl_choice == 0 and pc_choice == 1 or \
+     pl_choice == 1 and pc_choice == 2 or \
+     pl_choice == 2 and pc_choice == 0:
+    print(f'\n\
+{wld_msgs[1]}')
+else:
+    print(f'\n\
+{wld_msgs[2]}')
+print('=-='*15)
+sleep(0.5)
+print(f'Você escolheu {pl_choice} e o Computador escolheu {pc_choice}')
+sleep(0.5)
+print('=-='*15)
