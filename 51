@@ -1,0 +1,6 @@
+term1 = int(input('Qual o primeiro termo?: '))
+raz = int(input('Qual a razão?: '))
+term10 = term1 + (10 - 1) * raz
+for c in range (term1, term10 + raz, raz):
+    print(f'{c}')
+print('Fim')
