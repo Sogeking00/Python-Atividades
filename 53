@@ -1,0 +1,9 @@
+frase = str(input('Digite uma frase: ')).strip().upper()
+fraseSp = frase.split()
+fraseJun = ''.join(fraseSp)
+fraseInv = fraseJun[::-1]
+print(f'O resultado foi {fraseInv}')
+if fraseInv == fraseJun:
+    print('Essa frase é um palíndromo!')
+else:
+    print('Essa frase não é um palíndromo!')
