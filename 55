@@ -1,0 +1,13 @@
+menor_pes = 0
+maior_pes = 0
+peso = 0
+for pessoa in range(0,7):
+	peso = float(input(f'Digite o peso da {pessoa + 1 }° pessoa: '))
+	if pessoa == 0:
+		maior_pes = menor_pes = peso
+	if peso > maior_pes:
+		maior_pes = peso
+	elif peso < menor_pes:
+		menos_pes = peso
+print(f'O maior peso digitado foi {maior_pes}')
+print(f'O menor peso digitado foi {menor_pes}')
