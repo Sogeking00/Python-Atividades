@@ -1,0 +1,4 @@
+s = str(input('Qual é o seu sexo?: ')).upper()
+while s != 'M' and s != 'F':
+     s = str(input('Não entendi, Escreva M ou F : ')).upper()
+print(f'Você foi registrado com o sexo {s}')
