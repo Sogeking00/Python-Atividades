@@ -1,0 +1,43 @@
+print('°°°°°'*10)
+a = 1
+while a != 0:
+    val1 = int(input('Primeiro valor: '))
+    val2 = int(input('Segundo valor: '))
+    menu = int(input('''[1] somar
+[2] multiplicar
+[3] maior
+[4] novos números
+[5] sair do programa
+Qual é sua opção?: '''))
+    print('°°°°°'*10)
+    sm = val1 + val2
+    mult = val1 * val2
+    maior = max(val1, val2)
+    if menu == 1:
+        print(f'{val1} + {val2} = {sm}')
+    elif menu == 2:
+        print(f'{val1} . {val2} = {mult}')
+    elif menu == 3:
+        print(f'{maior} é o maior número entre {val1} e {val2}')
+    break
+    if menu == 5:
+        print('Programa finalizado')
+print('°°°°°'*10)
+while menu == 4: 
+    val1 = int(input('Primeiro valor: '))
+    val2 = int(input('Segundo valor: '))
+    menu = int(input('''[1] somar
+[2] multiplicar
+[3] maior
+[4] novos números
+[5] sair do programa
+Qual é sua opção?: '''))
+    if menu == 1:
+        print(f'{val1} + {val2} = {sm}')
+    elif menu == 2:
+        print(f'{val1} . {val2} = {mult}')
+    elif menu == 3:
+        print(f'{maior} é o maior número entre {val1} e {val2}')
+    break
+    if menu == 5:
+        print('Programa finalizado')
