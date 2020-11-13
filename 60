@@ -1,0 +1,4 @@
+from math import factorial
+num = int(input('Digite um número: '))
+fac = factorial(num)
+print(f'{num}! = {fac}')
