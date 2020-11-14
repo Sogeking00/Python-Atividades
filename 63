@@ -1,0 +1,12 @@
+# Variáveis int
+n = int(input('Qual o primeiro termo: '))
+num_term = int(input('Quantos termos: '))
+# Variáveis
+cont = 0
+res = 1
+# While
+while cont != num_term:
+    print(f'{n} -> {res}')
+    cont += 1
+    n = n + res
+    res = res + n
