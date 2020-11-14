@@ -1,0 +1,15 @@
+import time
+term1 = int(input('Primeiro termo: '))
+term_num = int(input('Quantos Termos?: '))
+raz = int(input('Razão: '))
+contador = 0
+progressão = term1
+termos = []
+while contador != term_num:
+    time.sleep(0.10)
+    contador += 1
+    print(f"{progressão}", end=', ' if len(termos)+1 != term_num else '.', flush=True)
+    termos.append(progressão)
+    progressão += raz 
+    if term_num == 0:
+        break
