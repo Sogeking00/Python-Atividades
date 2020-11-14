@@ -8,6 +8,6 @@ for pessoa in range(0,7):
 	if peso > maior_pes:
 		maior_pes = peso
 	elif peso < menor_pes:
-		menos_pes = peso
+		menor_pes = peso
 print(f'O maior peso digitado foi {maior_pes}')
 print(f'O menor peso digitado foi {menor_pes}')
