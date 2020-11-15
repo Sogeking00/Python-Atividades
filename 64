@@ -1,0 +1,7 @@
+sm = num = counter = 0
+while num != 999:
+    sm += num
+    counter += 1
+    num = int(input('Escolha um número: '))
+
+print(f'Você digitou {counter} números até chegar em 999! A soma entre eles é {sm}')
