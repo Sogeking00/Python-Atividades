@@ -1,0 +1,30 @@
+# Variáveis
+num_cont = num = val_maior = val_menor = media = val_media = 0
+fim = 'S'
+# Repetição
+while fim != 'N':
+    # Variáveis int e string
+    num = int(input('Digite um valor: '))
+    fim = str(input('Você quer continuar? [S/N] ').upper())
+    
+    # Variáveis média
+    # Ele vai ser o valor que vai dividir com o val_media
+    media += 1
+    # Ele vai somar todos os números e depois vai dividir com o media
+    val_media += num
+    
+    # Ele vai contar quantas vezes ja foi executado o While
+    num_cont += 1
+    
+    # IFS
+    if num_cont == 1:
+        val_menor = val_maior = num
+    if val_maior < num:
+        val_maior = num
+    elif val_menor > num:
+        val_menor = num
+# Agora o val_media vai dividir com a media
+media = val_media / media
+# Prints
+print(f'A média dos valores é: {media:.1f}')
+print(f'O maior valor foi o {val_maior}, o menor valor foi {val_menor}')
