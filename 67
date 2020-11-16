@@ -1,0 +1,13 @@
+num = int(input('Digite um número: '))
+vezes = cont = 0
+while True:
+  while cont != 10:
+        cont += 1
+        vezes += 1
+        print(f'{num} x {vezes} = {num*vezes}')
+  cont = 0 
+  cont += 1 -1
+  num = int(input('Digite um número: '))
+  if num < 0:
+    break
+  print(f'{num} x {vezes} = {num*vezes}')
