@@ -32,4 +32,5 @@ Obteve os números: {roll_list}!
 A soma entre eles é {sm}!
 ''')
     roll_list = []
+    sm = 0
     print('____'*10)
