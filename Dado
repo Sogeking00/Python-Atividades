@@ -1,0 +1,35 @@
+from time import sleep
+from random import randint
+import sys
+sm = 0
+roll_list = []
+print('____'*10)
+lados = int(input('Quantos lados tem o dado?: '))
+print('____'*10)
+num_dados = int(input('Quantos dados?: '))
+print('____'*10)
+vezes = int(input('Quantas vezes?: '))
+print('____'*10)
+for c in range(0, vezes):
+    for c in range (0, num_dados):
+        roll = randint(0, lados)
+        roll_list.append(roll)
+        sm += roll
+        sleep(0.5)
+    for c in range(0,3):  
+        sleep(0.5)
+        sys.stdout.write('\rRolando dados.')
+        sleep(0.3)
+        sys.stdout.write('\rRolando dados. .')
+        sleep(0.3)
+        sys.stdout.write('\rRolando dados. . .')
+        sleep(0.3)
+    sys.stdout.write(' ')
+    print('____'*5)
+    print(f'''
+{num_dados} dados foram rolados!!
+Obteve os números: {roll_list}! 
+A soma entre eles é {sm}!
+''')
+    roll_list = []
+    print('____'*10)
