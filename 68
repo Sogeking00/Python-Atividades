@@ -1,0 +1,33 @@
+# Importações
+from random import randint
+# Variáveis
+vitorias = sm = jog = p_i_jog = pc = 0
+p_i_pc = ['P', 'I']
+esc_pc = 'P'
+# Repetição
+while True:
+    # Variáveis int, string
+    jog = int(input('Digite um valor[0,10]: '))
+    p_i_jog = str(input('Par ou ímpar?[P/I]: ')).upper()
+    pc = randint(0,10)
+    # IFS
+    if p_i_jog == 'P':
+        esc_pc = 'Impar'
+    else:
+        esc_pc = 'Par'
+    sm = pc + jog
+    if p_i_jog == 'P' and sm % 2 == 0:
+        print('O player ganhou')
+        p_i_jog = 'Par'
+    elif p_i_jog == 'I' and sm % 2 == 1:
+        print('O player ganhou')
+        p_i_jog = 'Impar'
+    else:
+        print('O player perdeu')
+        if p_i_jog == 'P':
+            p_i_jog = 'Par'
+        else:
+            p_i_jog = 'Impar'
+    # Print
+    print(f'O computador escolheu {esc_pc} e o jogador escolheu {p_i_jog}. {jog}(Jogador) + {pc}(Computador) = {sm} ')
+    break
