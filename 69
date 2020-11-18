@@ -1,0 +1,34 @@
+tot18 = totm = totf20 = 0
+F = M = f = P = ''
+while True:
+    nome = str(input('Digite o seu nome: '))
+    ida = int(input('Digite a sua idade: '))
+    sexo = str(input('Digite o seu sexo[M/F]: ')).strip().upper()
+    esc = str(input('Quer continuar?: ')).upper()
+    if 'F' in sexo and ida < 20:
+        totf20 += 1
+    if 'M' in sexo:
+        totm += 1
+    if ida > 18:
+        tot18 += 1
+    if esc == 'S':
+        continue
+    else:
+        break
+if tot18 > 1:
+    P = 'Pessoas'
+if tot18 <= 1:
+    P = 'Pessoa'
+if totm > 1:
+    M = 'Homens'
+    f = 'foram'
+if totm <= 1:
+    M = 'Homem'
+    f = 'foi'
+if totf20 > 1:
+    F = 'Mulheres'
+if totf20 <= 1:
+    F = 'Mulher'
+print(f'''{tot18} {P} tem mais 18 anos!
+{totm} {M} {f} cadastrado(s)!
+{totf20} {F} tem menos de 20 anos''')
