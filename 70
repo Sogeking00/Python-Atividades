@@ -1,0 +1,30 @@
+print('-=-'*13)
+print('LOJA SUPER BUCETÃO'.center(40))
+prod_br = sm = prod_1000 = c = pr_mai = pr_men = prod_1k = 0
+nome_br = ''
+while True:
+    nome_prod = str(input('Qual o nome do produto? '))
+    # Valor
+    pr = int(input('Quanto custa? R$'))
+    c += 1
+    if pr > 1000: 
+        prod_1k += 1
+    if c == 1:
+        pr_mai = pr_men = pr
+    # Escolha
+    while True:
+        esc = str(input('Você quer continuar? [S/N]: ').upper())
+        if esc == 'S' or esc == 'N':
+            break
+    # Menor nome
+    if pr_men >= pr:
+        pr_men = pr
+        nome_br = nome_prod
+    # Adicional
+    sm += pr
+    # Escolha
+    if esc == 'N':
+        break
+print(f'''O produto mais barato foi {nome_br} ele custa R${pr_men}
+A soma de todos é R${sm}
+{prod_1k} produtos custam mais de 1000 reais''')
